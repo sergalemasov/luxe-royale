@@ -1,0 +1,45 @@
+@import '../vars/colors';
+
+.header-nav {
+    @nav-width: 420px;
+    @divider-width: 6px;
+
+    width: @nav-width;
+    display: flex;
+
+
+    &__divider {
+        width: 6px;
+        height: 74px;
+        background-repeat: no-repeat;
+
+        &--type1 {
+            background-image: url(../img/header-btn-border1.png);
+        }
+
+        &--type2 {
+            background-image: url(../img/header-btn-border2.png);
+        }
+    }
+
+    &__btn {
+        font-size: 16px;
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+        height: 74px;
+        width: (@nav-width - 4 * @divider-width) / 3;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: @header-nav-text-color;
+        text-shadow: 0px 3px 3px rgba(43, 24, 11, 0.53);
+        line-height: 19px;
+        transition: color 0.1s ease;
+
+        &:hover {
+            color: darken(@header-nav-text-color, 20%);
+        }
+    }
+}
