@@ -1,32 +1,54 @@
 .header-social {
-    width: 216px;
+    width: 208px;
     display: flex;
     justify-content: space-between;
 
     &__icon {
-        display: block;
+        height: 49px;
+        width: 49px;
+        background-position: center;
         background-repeat: no-repeat;
-        height: 64px;
-        width: 66px;
 
         &--fb {
-            background-image: url(../img/header-fb.png);
+            background-image: url(../img/fb-top1.png);
+            transform: translate(-1px, 0);
+
+            .header-social__link:hover & {
+                background-image: url(../img/fb-top.png);
+                transform: translate(0, 0);
+            }
         }
 
         &--vk {
-            background-image: url(../img/header-vk.png);
+            background-image: url(../img/vk-top1.png);
+            transform: translate(-1px, 1px);
+
+            .header-social__link:hover & {
+                background-image: url(../img/vk-top.png);
+                transform: translate(0, 1px);
+            }
         }
 
         &--mail {
-            background-image: url(../img/header-mail.png);
+            background-image: url(../img/mail-top1.png);
+
+            .header-social__link:hover & {
+                background-image: url(../img/mail-top.png);
+            }
         }
     }
 
     &__link {
-        margin: 5px 0 0 8px;
-        display: block;
         cursor: pointer;
-        width: 50px;
-        height: 48px;
+        display: block;
+        background-repeat: no-repeat;
+        height: 49px;
+        width: 49px;
+        background-image: url(../img/bg-social-top.png);
+
+        &:hover {
+            background-image: url(../img/bg-social-top-hover.png);
+        }
+
     }
 }
