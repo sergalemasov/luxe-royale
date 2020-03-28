@@ -1,61 +1,27 @@
 @import '../vars/colors';
 
 .privacy-policy-main {
-    min-width: 1200px;
-    background-size: cover;
-    background-repeat: repeat-y;
+    width: 1200px;
     position: relative;
-    color: @blank-color;
+    height: 202px;
+    margin: 0 auto;
 
     &__background {
-        width: 1920px;
         position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        background: url(../img/privacy-background.png) center top;
+        top: -91px;
+        left: -360px;
+        width: 1560px;
+        height: 300px;
+        position: absolute;
+        background: url(../img/startscreenprivacy.png) no-repeat left top;
+        z-index: 0;
     }
 
     &__text {
         position: relative;
-        z-index: 1;
-        width: 1200px;
-        margin: 80px auto;
-        padding: 0 20px;
-        box-sizing: border-box;
-
-        & p,
-        & li {
-            font-size: 17px;
-            line-height: 22px;
-        }
-
-        & li {
-            margin: 10px 0;
-        }
-
-        & a {
-            text-decoration: none;
-            color: @blank-color;
-            transition: color 0.1s ease;
-
-            &:hover {
-                color: darken(@blank-color, 20%);
-            }
-        }
-
-        & h3 {
-            margin: 30px 0;
-        }
-    }
-
-    &__border {
-        height: 20px;
-        background: url(../img/policy-border.png) no-repeat center top;
-    }
-
-    &__egd {
-        color: @gold-color;
+        color: @privacy-header-color;
+        font-size: 48px;
+        text-align: center;
+        margin-top: 75px;
     }
 }

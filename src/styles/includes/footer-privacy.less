@@ -1,0 +1,38 @@
+@import '../vars/colors';
+
+.footer-privacy {
+    height: auto;
+
+    &__text {
+        margin: 60px 0 150px;
+        position: relative;
+        z-index: 1;
+        font-size: 16px;
+        line-height: 18px;
+        color: @privacy-text-color;
+        font-weight: 400;
+
+        & p {
+            margin: 20px 0;
+        }
+
+        & li {
+            margin: 10px 0;
+        }
+
+        & a {
+            text-decoration: none;
+            color: @privacy-text-color;
+            transition: color 0.1s ease;
+
+            &:hover {
+                color: lighten(@privacy-text-color, 10%);
+            }
+        }
+
+        & h3 {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+    }
+}

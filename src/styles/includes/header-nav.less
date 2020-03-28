@@ -28,8 +28,16 @@
             color: @nav-hover-text-color;
         }
 
+        &_active,
         &:active {
             background-image: url(../img/btn-active-top.png);
+        }
+
+        &_active {
+            &:hover {
+                color: @nav-text-color;
+                cursor: default;
+            }
         }
     }
 }
