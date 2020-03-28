@@ -2,9 +2,20 @@
 @import '../vars/dimensions';
 
 .footer {
+    position: relative;
+    height: 638px;
+    overflow: hidden;
     margin-top: auto;
-    background: url('../img/bg-bottom.png') no-repeat center bottom;
-    min-width: @content-width-lg;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 1920px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #250503;
+    }
 
     &__content {
         width: @content-width-lg;
@@ -12,15 +23,42 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+        height: 100%;
+    }
+
+    &__panel {
+        width: 1920px;
+        height: 70px;
+        background: url('../img/footer-panel.png') no-repeat center bottom;
+        position: absolute;
+        left: 0;
+
+        &_top {
+            top: -10px;
+        }
+
+        &_bottom {
+            bottom: -11px;
+        }
+    }
+
+    &__divider {
+        background: url('../img/divider.png') no-repeat center bottom;
+        width: 1118px;
+        height: 34px;
+        margin: 235px auto 0;
+        transform: translateX(5px);
     }
 
     &__message {
-        width: 600px;
+        width: 760px;
         text-align: center;
-        font-size: 18px;
+        font-weight: 400;
+        font-size: 24px;
         color: @footer-message-color;
-        line-height: 22px;
-        margin-top: 29px;
+        line-height: 28px;
+        margin-top: 6px;
     }
 
     &__social {

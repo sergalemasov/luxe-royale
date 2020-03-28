@@ -1,5 +1,7 @@
+@import '../vars/mixins';
+
 .header-social {
-    width: 208px;
+    width: 210px;
     display: flex;
     justify-content: space-between;
 
@@ -15,7 +17,7 @@
 
             .header-social__link:hover & {
                 background-image: url(../img/fb-top.png);
-                transform: translate(0, 0);
+                transform: translate(-1px, 0);
             }
         }
 
@@ -25,7 +27,7 @@
 
             .header-social__link:hover & {
                 background-image: url(../img/vk-top.png);
-                transform: translate(0, 1px);
+                transform: translate(-1px, 0);
             }
         }
 
@@ -34,11 +36,13 @@
 
             .header-social__link:hover & {
                 background-image: url(../img/mail-top.png);
+                transform: translate(1px, 0);
             }
         }
     }
 
     &__link {
+        .no-tap-highlight();
         cursor: pointer;
         display: block;
         background-repeat: no-repeat;
@@ -46,7 +50,7 @@
         width: 49px;
         background-image: url(../img/bg-social-top.png);
 
-        &:hover {
+        &:active {
             background-image: url(../img/bg-social-top-hover.png);
         }
 

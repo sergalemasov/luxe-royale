@@ -12,8 +12,6 @@
     }
 
     Header.prototype.addListeners = function () {
-        console.log(this.contactsNode, this.supportNode);
-
         [this.contactsNode, this.supportNode]
             .forEach(function(node) {
                 node.addEventListener('click', app.scrollToBottom);

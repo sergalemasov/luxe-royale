@@ -4,6 +4,8 @@
     background: url(../img/bg-top.png) no-repeat center top;
     height: 96px;
     min-width: @content-width-lg;
+    position: relative;
+    z-index: 1;
 
     &__content {
         width: @content-width-lg;
@@ -14,14 +16,14 @@
     }
 
     &__social {
-        margin-top: 20px;
-        margin-left: 33px;
+        margin-top: 21px;
+        margin-left: 35px;
     }
 
     &__nav {
         margin-left: auto;
         margin-right: 5px;
-        margin-top: 12px;
+        margin-top: 14px;
     }
 
     &__logo {
@@ -32,7 +34,7 @@
         background-repeat: no-repeat;
         position: absolute;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(calc(-50% - 1px));
         z-index: 2;
     }
 }
