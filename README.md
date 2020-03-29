@@ -1,4 +1,4 @@
-### Ставишь ноду 10 версии отсюда https://nodejs.org/en/
+### Ставишь ноду LTS отсюда https://nodejs.org/en/
 ### Выполняешь из корня проекта команды:
 ```bash
 npm install
